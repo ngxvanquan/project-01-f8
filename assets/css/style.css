@@ -402,7 +402,220 @@ a {
     top: 0;
     left: 0;
     width: 239px;
+    padding: 45px 22px 40px;
     border-radius: 0px 0px 12px 12px;
     background: #fff;
     box-shadow: 90px 85px 100px 0px rgba(0, 0, 0, 0.06);
+}
+
+.stats-trend .value {
+    color: #000339;
+    font-size: 2.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1; /* 100% */
+    letter-spacing: 0.26px;
+}
+
+.stats-trend .desc {
+    margin-top: 8px;
+    color: #a7a7a7;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+}
+
+.stats-trend .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stats-trend .separate {
+    margin-top: 25px;
+    height: 1.2px;
+    flex-shrink: 0;
+    background: #e9e9e9;
+}
+
+.stats .avatar-block {
+    margin-top: 26px;
+    display: flex;
+    gap: 16px 14px;
+    flex-wrap: wrap;
+}
+
+.stats .avatar-group {
+    display: flex;
+}
+
+.stats .avatar-group .avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: -3px;
+    background-color: var(--avatar-color, white);
+    font-size: 7px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: normal;
+    letter-spacing: -0.145px;
+    color: #fff;
+}
+
+.stats .avatar-group .avatar {
+    margin-left: 0;
+}
+
+.stats .row-qty {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 110px;
+    padding: 0 32px;
+}
+
+.stats .row-qty .qty {
+    color: #000;
+    font-size: 6.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.stats .row-qty .qty-desc {
+    color: #7b8087;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* Subscription */
+.Subscription {
+    margin-top: 90px;
+    position: relative;
+}
+.Subscription .body {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    background: #063183;
+    height: 360px;
+}
+
+.Subscription .info {
+    padding: 0 80px;
+}
+
+.Subscription .info .sub-title {
+    color: #fff;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.Subscription .info .desc {
+    margin-top: 15px;
+    color: #fff;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.87; /* 187.5% */
+}
+
+.Subscription .info .btn {
+    margin-top: 20px;
+    background-color: #fff;
+    color: #002366;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.Subscription .image {
+    position: absolute;
+    bottom: 0;
+    right: 220px;
+}
+
+/* Footer */
+
+.footer {
+    margin-top: 55px;
+    padding: 50px 165px 58px;
+}
+
+.footer .row {
+    display: flex;
+}
+
+.footer .row-top {
+    gap: 185px;
+}
+
+.footer .heading {
+    color: #1c1c1d;
+    font-family: Lato;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.footer .list,
+.footer .column .desc {
+    margin-top: 42px;
+}
+
+.footer .column a,
+.footer .column .desc {
+    color: #7a7a7e;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.footer .column .desc {
+    white-space: normal;
+}
+
+.footer .list .item {
+    margin-top: 18px;
+}
+
+.footer .social {
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+}
+
+.footer .social .social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+}
+
+.footer .row-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 81px;
+}
+.footer .copyright {
+    color: #c2c2c2;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
