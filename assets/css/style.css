@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     --primary-color: #0f1b4c;
     font-size: 62.5%;
@@ -38,28 +43,36 @@ a {
 }
 
 /* Header */
-.header {
+.hero-wrap {
     position: relative;
     background: #e6f0ff;
-    height: 100vh;
+    height: calc(100vh - 80px);
 }
 
-.header .navbar {
+.fix-header {
+    background-color: #e6f0ff;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
+
+.fix-header .navbar {
     display: flex;
-    padding-top: 38px;
+    padding-top: 12px;
 }
 
-.header .navbar ul {
+.fix-header .navbar ul {
     display: flex;
     margin-left: 50px;
     align-items: center;
 }
 
-.header .navbar .actions {
+.fix-header .navbar .actions {
     margin-left: auto;
 }
 
-.header .navbar ul li a {
+.fix-header .navbar ul li a {
     font-size: 1.4rem;
     padding: 8px 14px;
     color: #4f5361;
@@ -68,7 +81,7 @@ a {
     line-height: normal;
 }
 
-.header .navbar .actions .action-link {
+.fix-header .navbar .actions .action-link {
     color: var(--primary-color);
     font-size: 1.4rem;
     font-style: normal;
@@ -82,16 +95,21 @@ a {
     border-radius: 8px;
 }
 
-.header .navbar ul a:hover {
+.fix-header .navbar ul a:hover {
     text-decoration: underline;
 }
 
-.header .hero {
-    width: 51%;
-    margin-top: 130px;
+.hero-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.header .hero .sub-title {
+.hero-wrap .info {
+    width: 51%;
+}
+
+.hero-wrap .sub-title {
     color: #687690;
     font-size: 1.8rem;
     font-style: normal;
@@ -100,7 +118,7 @@ a {
     letter-spacing: 0.18px;
 }
 
-.header .hero .title {
+.hero-wrap .title {
     margin-top: 8px;
     color: #000336;
     font-size: 6.4rem;
@@ -109,7 +127,7 @@ a {
     line-height: 1.18; /* 118.75% */
 }
 
-.header .hero .desc {
+.hero-wrap .desc {
     margin-top: 30px;
     color: #5a6473;
     font-size: 1.8rem;
@@ -125,7 +143,7 @@ a {
 
 .hero-img {
     position: absolute;
-    right: 65px;
+    right: calc((100vw - 1110px) / 2 - 100px);
     bottom: 0;
 }
 
