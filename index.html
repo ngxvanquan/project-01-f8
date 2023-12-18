@@ -14,8 +14,13 @@
             href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
             rel="stylesheet"
         />
+
+        <!-- ========== Link CSS ========== -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
+        <link rel="stylesheet" href="./assets/css/reponsive.css" />
+
+        <!-- ========== Favicon ========== -->
         <link
             rel="apple-touch-icon"
             sizes="57x57"
@@ -95,9 +100,25 @@
             <div class="content">
                 <!-- NavBar -->
                 <nav class="navbar">
+                    <!-- Tablet/ Menu -->
+                    <label for="menu" class="toggle-menu">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </label>
+
                     <!-- NavBar Logo -->
                     <a href="#"
-                        ><img src="./assets/img/logo.svg" alt="Besnik."
+                        ><img
+                            class="logo"
+                            src="./assets/img/logo.svg"
+                            alt="Besnik."
                     /></a>
 
                     <!-- NavBar Navigation -->
@@ -124,6 +145,56 @@
                         <a class="btn action-btn" href="#!">Sign up</a>
                     </div>
                 </nav>
+            </div>
+        </header>
+
+        <!-- Mobile/Table Header -->
+        <header class="mobile-header">
+            <input
+                class="checkbox-input"
+                type="checkbox"
+                name="menu"
+                id="menu"
+                hidden
+            />
+
+            <label for="menu" class="overlay"></label>
+            <div class="menu-drawer">
+                <!-- NavBar Logo -->
+                <a href="#"
+                    ><img
+                        class="logo"
+                        src="./assets/img/logo.svg"
+                        alt="Besnik."
+                /></a>
+
+                <!-- NavBar Navigation -->
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#features">Features</a>
+                    </li>
+                    <li>
+                        <a href="#resources">Resources</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Separator -->
+                <div class="separator"></div>
+
+                <!-- NavBar Action -->
+                <div class="actions">
+                    <a class="" href="#!">Sign in</a>
+                    <a class="" href="#!">Sign up</a>
+                </div>
             </div>
         </header>
         <main>
@@ -418,6 +489,10 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="show-on-mobile">
+                        <a href="#!" class="btn">View All Properties</a>
+                    </div>
                 </div>
             </div>
             <!-- Stats -->
@@ -618,31 +693,45 @@
         <footer class="footer">
             <div class="content">
                 <div class="row row-top">
-                    <!-- Product Column -->
+                    <!-- Product column -->
                     <div class="column">
                         <h3 class="heading">Product</h3>
                         <ul class="list">
-                            <li class="item"><a href="#!">Listing</a></li>
-                            <li class="item"><a href="#!">Property</a></li>
-                            <li class="item"><a href="#!">Agents</a></li>
-                            <li class="item"><a href="#!">Blog</a></li>
+                            <li class="item">
+                                <a href="#!">Listing</a>
+                            </li>
+                            <li class="item">
+                                <a href="#!">Property</a>
+                            </li>
+                            <li class="item">
+                                <a href="#!">Agents</a>
+                            </li>
+                            <li class="item">
+                                <a href="#!">Blog</a>
+                            </li>
                         </ul>
                     </div>
-                    <!-- Resources Column -->
+
+                    <!-- Resources column -->
                     <div class="column">
                         <h3 class="heading">Resources</h3>
                         <ul class="list">
-                            <li class="item"><a href="#!">Our Homes</a></li>
+                            <li class="item">
+                                <a href="#!">Our Homes</a>
+                            </li>
                             <li class="item">
                                 <a href="#!">Member Stories</a>
                             </li>
-                            <li class="item"><a href="#!">Video</a></li>
+                            <li class="item">
+                                <a href="#!">Video</a>
+                            </li>
                             <li class="item">
                                 <a href="#!">Free trial</a>
                             </li>
                         </ul>
                     </div>
-                    <!-- Company Column -->
+
+                    <!-- Company column -->
                     <div class="column">
                         <h3 class="heading">Company</h3>
                         <ul class="list">
@@ -652,40 +741,40 @@
                             <li class="item">
                                 <a href="#!">Terms of use</a>
                             </li>
-                            <li class="item"><a href="#!">Privacy</a></li>
-                            <li class="item"><a href="#!">Sitemap</a></li>
+                            <li class="item">
+                                <a href="#!">Privacy</a>
+                            </li>
+                            <li class="item">
+                                <a href="#!">Sitemap</a>
+                            </li>
                         </ul>
                     </div>
-                    <!-- Get in touch Column -->
+
+                    <!-- Get in touch column -->
                     <div class="column">
                         <h3 class="heading">Get in touch</h3>
                         <p class="desc">
-                            You'll find your next home, in any style you prefer.
+                            You’ll find your next home, in any style you prefer.
                         </p>
                         <div class="social">
                             <a href="#!" class="social-link">
-                                <img src="./assets/img/fb-icon.svg" alt="" />
+                                <img src="./assets/img/facebook.svg" alt="" />
                             </a>
                             <a href="#!" class="social-link">
-                                <img src="./assets/img/tw-icon.svg" alt="" />
+                                <img src="./assets/img/twitter.svg" alt="" />
                             </a>
                             <a href="#!" class="social-link">
-                                <img
-                                    src="./assets/img/linkin-icon.svg"
-                                    alt=""
-                                />
+                                <img src="./assets/img/linkedin.svg" alt="" />
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="row row-bottom">
-                    <a href="#">
-                        <img
-                            src="./assets/img/logo.svg"
-                            alt="Besnik."
-                            class="logo"
-                        />
-                    </a>
+                    <img
+                        src="./assets/img/logo.svg"
+                        alt="Besnik."
+                        class="logo"
+                    />
                     <p class="copyright">
                         Copyright 2020.com, All rights reserved.
                     </p>
