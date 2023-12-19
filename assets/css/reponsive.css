@@ -176,6 +176,9 @@
     .show-on-mobile {
         display: none;
     }
+    .feature .list .label {
+        white-space: nowrap;
+    }
 }
 
 /* ========== Mobile ========== */
@@ -278,5 +281,11 @@
     .footer .item a,
     .footer .desc {
         font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .content {
+        max-width: calc(100% - 32px);
     }
 }
